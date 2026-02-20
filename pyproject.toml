@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-refiner"
+version = "0.1.0"
+description = "Lightweight modular CLI that refines prompts using a local LLM via Ollama."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Sharu Paul Sharma" }]
+keywords = ["ollama", "llm", "prompt", "cli"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/SharuPaul/prompt-refiner"
+
+[project.scripts]
+prompt-refiner = "prompt_refiner.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
