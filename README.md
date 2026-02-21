@@ -36,12 +36,12 @@ Behavior notes:
 
 ## Example Models
 
-You can use any model pulled in your Ollama instance. Common examples:
+You can use any model pulled in your Ollama instance. Refiner output quality depends on the model used. 
+Common examples:
 
 - `phi3:mini` (default)
 - `llama3.2`
 - `qwen2.5:1.5b`
-- `mistral:7b`
 - `gemma2:2b`
 
 List currently pulled models:
@@ -55,7 +55,7 @@ prompt-refiner --list-models
 Basic prompt refinement:
 
 ```bash
-prompt-refiner "write a cover letter for an HPC engineer role"
+prompt-refiner "write a code block for a calculator"
 ```
 
 All available command options:
@@ -80,6 +80,12 @@ Use a specific model:
 
 ```bash
 prompt-refiner --model llama3.2 "Help me write code for an RNA-seq pipeline"
+```
+
+Use a model from Hugging Face:
+
+```bash
+prompt-refiner --model hf.co/bartowski/SmolLM2-1.7B-Instruct-GGUF:Q4_K_M  "what is huggingface?"
 ```
 
 Read prompt text from stdin:
