@@ -37,12 +37,13 @@ Behavior notes:
 ## Example Models
 
 You can use any model pulled in your Ollama instance. Refiner output quality depends on the model used. 
+
 Common examples:
 
 - `phi3:mini` (default)
 - `llama3.2`
-- `qwen2.5:1.5b`
 - `gemma2:2b`
+- `gemma3:1b`
 
 List currently pulled models:
 
@@ -105,3 +106,11 @@ Set request timeout:
 ```bash
 prompt-refiner --timeout 90 "improve this prompt"
 ```
+
+## Practical Notes
+
+From manual testing:
+
+- Very small models tend to answer the prompt instead of refining it
+- Refiner works with the models listed in the `Example Models` section
+- If output quality drops, switch to one of the listed models or a larger model
