@@ -111,6 +111,10 @@ Set request timeout:
 prompt-refiner --timeout 90 "improve this prompt"
 ```
 
+## Citation 
+
+DOI: https://doi.org/10.5281/zenodo.18926768
+
 ## Practical Notes
 
 From manual testing:
