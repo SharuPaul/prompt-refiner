@@ -1,4 +1,5 @@
 # Prompt Refiner
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18926768.svg)](https://doi.org/10.5281/zenodo.18926768)
 
 Prompt Refiner is a lightweight Python CLI tool that rewrites your raw prompts into clearer, structured prompts using a local LLM through Ollama.
 
